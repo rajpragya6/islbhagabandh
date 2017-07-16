@@ -1,0 +1,13 @@
+<div class="modal-content json-modal-body" id="full-width" close="close()">
+	<div class="modal-body"> 
+		<a title="Close">
+			<i ng-click="close()" class="close-gallery-modal glyphicon glyphicon-remove icon-arrow-right pull-right"></i>
+		</a> 
+		<videogular vg-theme="config.theme.url">
+			<vg-media vg-src="config.sources"
+			          vg-tracks="config.tracks"
+			          vg-native-controls="true">
+			</vg-media>
+		</videogular>
+	</div>
+</div>

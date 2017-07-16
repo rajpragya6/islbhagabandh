@@ -13,6 +13,7 @@
 		  		<button type="button" class="btn btn-default btn-sm-3" ng-class="{'active' : active === 1}" ng-click="active = 1">INFRASTRUCTURE</button>
 		  		<button type="button" class="btn btn-default btn-sm-3" ng-class="{'active' : active === 2}" ng-click="active = 2">EVENTS</button>
 		  		<button type="button" class="btn btn-default btn-sm-3" ng-class="{'active' : active === 3}" ng-click="active = 3">ACADEMICS</button>
+		  		<button type="button" class="btn btn-default btn-sm-3" ng-class="{'active' : active === 4}" ng-click="active = 4">VIDEOS</button>
    		
 			</p>
 		</div>						 
@@ -130,6 +131,36 @@
    		 		<img src="assets/images/slide28.jpg" width="600" height="400">
   			</a>
 		</div>
+
+		<div class="gallery" ng-if="active == 4 || active == 0">
+ 		 	<a ng-click="showVideo('assets/images/physics_lab.mp4')">
+   		 		<img src="" width="600" height="400">
+  			</a>
+  				<div class="desc">Performing Physics Lab</div>
+		</div>
+
+		<div class="gallery" ng-if="active == 4 || active == 0">
+ 		 	<a ng-click="showVideo('assets/images/chem_lab.mp4')">
+   		 		<img src="" width="600" height="400">
+  			</a>
+  				<div class="desc">Performing Chemistry Lab</div>
+		</div>
+
+		<div class="gallery" ng-if="active == 4 || active == 0">
+ 		 	<a ng-click="showVideo('assets/images/bio_lab1.mp4')">
+   		 		<img src="" width="600" height="400">
+  			</a>
+  			 	<div class="desc">Performing Biology Lab</div>
+		</div>
+
+
+		<div class="gallery" ng-if="active == 4 || active == 0">
+ 		 	<a ng-click="showVideo('assets/images/bio_lab2.mp4')">
+   		 		<img src="" width="600" height="400">
+  			</a>
+  				<div class="desc">Performing Biology Lab</div>
+		</div>
+
 	</div>
 
 	<div id="gallery_footer">

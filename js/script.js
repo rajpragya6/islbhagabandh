@@ -1,4 +1,5 @@
-	var scotchApp = angular.module('scotchApp', ['ngRoute', 'ui.bootstrap']);
+	var scotchApp = angular.module('scotchApp', ['ngRoute', 'ui.bootstrap' , 'ngSanitize',
+            "com.2fdevs.videogular"]);
 
 	// configure our routes
 	scotchApp.config(function($routeProvider) {
@@ -132,7 +133,7 @@
     init_map();
 	});
 
-	scotchApp.controller('galleryController', function($rootScope, $scope, $modal) {
+	scotchApp.controller('galleryController', function($rootScope, $scope, $modal, $sce) {
 		$scope.showImage = function(imageUrl){
 			$scope.imageUrl = imageUrl;
 			var modalInstance = $modal.open({
@@ -151,6 +152,44 @@
 			})
 		}
 		$rootScope.currentPage = "gallery";
+
+
+		$scope.showVideo = function(videoUrl){
+			$scope.imageUrl = videoUrl;
+			var modalInstance = $modal.open({
+				templateUrl: 'assets/Pages/video_popup.html', //'<img src = "'+imageUrl+'" class="modal-image">'
+				resolve: {
+					imageUrl: function () {
+					  return $scope.imageUrl;
+					}
+				},
+				controller: function($scope, $modalInstance, imageUrl){
+					$scope.close = function(){
+						$modalInstance.dismiss();
+					}
+					$scope.imageUrl = imageUrl;
+				 	$scope.config = {
+		                preload: "none",
+		                sources: [
+		                    {src: $sce.trustAsResourceUrl(imageUrl), type: "video/mp4"}
+		                ],
+		                tracks: [
+		                    {
+		                        src: "http://www.videogular.com/assets/subs/pale-blue-dot.vtt",
+		                        kind: "subtitles",
+		                        srclang: "en",
+		                        label: "English",
+		                        default: ""
+		                    }
+		                ],
+		                theme: {
+		                    url: "https://unpkg.com/videogular@2.1.2/dist/themes/default/videogular.css"
+		                }
+		            };
+				}
+			})
+		}
+
 	});
 
 
