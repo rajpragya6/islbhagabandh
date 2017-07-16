@@ -1,0 +1,139 @@
+<div id="gallery_container">
+	<div id="gallery_title">
+	<div id="title_text">
+		<p> our  gallery </p>
+	</div>
+
+	</div>
+
+	<div id="gallery_main">
+		<div id="gallery_tabs">
+			<p ng-init="active = 0">
+		  		<button type="button" class="btn btn-default btn-sm-3" ng-class="{'active' : active === 0}" ng-click="active = 0">ALL</button>
+		  		<button type="button" class="btn btn-default btn-sm-3" ng-class="{'active' : active === 1}" ng-click="active = 1">INFRASTRUCTURE</button>
+		  		<button type="button" class="btn btn-default btn-sm-3" ng-class="{'active' : active === 2}" ng-click="active = 2">EVENTS</button>
+		  		<button type="button" class="btn btn-default btn-sm-3" ng-class="{'active' : active === 3}" ng-click="active = 3">ACADEMICS</button>
+   		
+			</p>
+		</div>						 
+		
+		<div class="gallery" ng-if="active == 2 || active == 0">
+ 		 	<a ng-click="showImage('assets/images/slide1.jpg')">
+   		 		<img src="assets/images/slide1.jpg">
+  			</a>
+		</div>	
+		<div class="gallery" ng-if="active == 2 || active == 0">
+ 		 	<a ng-click="showImage('assets/images/slide2.jpg')">
+   		 		<img src="assets/images/slide2.jpg" width="600" height="400">
+  			</a>
+		</div>
+		<div class="gallery" ng-if="active == 2 || active == 0">
+ 		 	<a ng-click="showImage('assets/images/slide3.jpg')">
+   		 		<img src="assets/images/slide3.jpg" width="600" height="400">
+  			</a>
+		</div>
+		<div class="gallery" ng-if="active == 2 || active == 0">
+ 		 	<a ng-click="showImage('assets/images/slide4.jpg')">
+   		 		<img src="assets/images/slide4.jpg" width="600" height="400">
+  			</a>
+		</div>
+		<div class="gallery" ng-if="active == 3 || active == 0">
+ 		 	<a ng-click="showImage('assets/images/slide5.jpg')">
+   		 		<img src="assets/images/slide5.jpg" width="600" height="400">
+  			</a>
+		</div>
+		<div class="gallery" ng-if="active == 2 || active == 0">
+ 		 	<a ng-click="showImage('assets/images/slide6.jpg')">
+   		 		<img src="assets/images/slide6.jpg" width="600" height="400">
+  			</a>
+		</div>
+		<div class="gallery" ng-if="active == 2 || active == 0">
+ 		 	<a ng-click="showImage('assets/images/slide7.jpg')">
+   		 		<img src="assets/images/slide7.jpg" width="600" height="400">
+  			</a>
+		</div>
+		
+
+		<div class="gallery" ng-if="active == 3 || active == 0">
+ 		 	<a ng-click="showImage('assets/images/slide24.jpg')">
+   		 		<img src="assets/images/slide24.jpg" width="600" height="400">
+  			</a>
+		</div>
+		
+		<div class="gallery" ng-if="active == 2 || active == 0 || active == 3">
+ 		 	<a ng-click="showImage('assets/images/slide9.jpg')">
+   		 		<img src="assets/images/slide9.jpg" width="600" height="400">
+  			</a>
+		</div>
+		
+		<div class="gallery" ng-if="active == 0">
+ 		 	<a ng-click="showImage('assets/images/slide11.jpg')">
+   		 		<img src="assets/images/slide11.jpg" width="600" height="400">
+  			</a>
+		</div>
+		<div class="gallery" ng-if="active == 3 || active == 0">
+ 		 	<a ng-click="showImage('assets/images/slide12.jpg')">
+   		 		<img src="assets/images/slide12.jpg" width="600" height="400">
+  			</a>
+		</div>
+
+		<div class="gallery" ng-if="active == 0">
+ 		 	<a ng-click="showImage('assets/images/slide18.jpg')">
+   		 		<img src="assets/images/slide18.jpg" width="600" height="400">
+  			</a>
+		</div>
+
+		<div class="gallery" ng-if="active == 3 || active == 0">
+ 		 	<a ng-click="showImage('assets/images/slide21.jpg')">
+   		 		<img src="assets/images/slide21.jpg" width="600" height="400">
+  			</a>
+		</div>
+
+		<div class="gallery" ng-if="active == 3 || active == 0">
+ 		 	<a ng-click="showImage('assets/images/slide22.jpg')">
+   		 		<img src="assets/images/slide22.jpg" width="600" height="400">
+  			</a>
+		</div>
+
+		<div class="gallery" ng-if="active == 0">
+ 		 	<a ng-click="showImage('assets/images/slide19.jpg')">
+   		 		<img src="assets/images/slide19.jpg" width="600" height="400">
+  			</a>
+		</div>
+
+		<div class="gallery" ng-if="active == 2 || active == 0">
+ 		 	<a ng-click="showImage('assets/images/slide23.jpg')">
+   		 		<img src="assets/images/slide23.jpg" width="600" height="400">
+  			</a>
+		</div>
+
+		<div class="gallery" ng-if="active == 3 || active == 0">
+ 		 	<a ng-click="showImage('assets/images/slide20.jpg')">
+   		 		<img src="assets/images/slide20.jpg" width="600" height="400">
+  			</a>
+		</div>
+
+		<div class="gallery" ng-if="active == 2 || active == 0 || active == 3">
+ 		 	<a ng-click="showImage('assets/images/slide8.jpg')">
+   		 		<img src="assets/images/slide8.jpg" width="600" height="400">
+  			</a>
+		</div>
+
+		<div class="gallery" ng-if="active == 2 || active == 0">
+ 		 	<a ng-click="showImage('assets/images/slide25.jpg')">
+   		 		<img src="assets/images/slide25.jpg" width="600" height="400">
+  			</a>
+		</div>
+
+		<div class="gallery" ng-if="active == 2 || active == 0">
+ 		 	<a ng-click="showImage('assets/images/slide28.jpg')">
+   		 		<img src="assets/images/slide28.jpg" width="600" height="400">
+  			</a>
+		</div>
+	</div>
+
+	<div id="gallery_footer">
+		
+	</div>
+
+</div>

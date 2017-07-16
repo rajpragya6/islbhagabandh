@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html ng-app="scotchApp">
+<head>
+	<title> ISL BHAGABANDH</title>
+</head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Holtwood+One+SC" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Volkhov" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Rakkas" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Limelight" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Taviraj" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Metal+Mania" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Niconne" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4JxbSdcdyRbgM248uSgfs6IF6ecVVMes"></script>
+<body ng-controller="mainController">
+<div id = "header">
+	<div class="jumbotron">
+	  <div class="container text-center">
+	  	<div class="row">
+	  		<div class="col-sm-2">
+		    	<div id="logo">
+		  			<img src="./assets/images/logo.jpg">
+		  		</div>
+	  		</div>
+	  		<div class="col-sm-8">
+          <div id="title">
+			     <p>INDIAN SCHOOL OF LEARNING</p>
+			        <p> (BHAGABAND) </p>
+          </div>
+	  		</div>
+	  			<div class="col-sm-2">
+	  				<div id="detail">
+	  				<p> National Highway from</p>
+            <p> Putki to Phusbunglow</p>
+            <p> Dhanbad, Jharkhand</p>
+	  				<p> Tel : +91-7277757957</p>
+	  				</div>
+	  			</div>
+	  	</div>
+	  </div>
+	</div>
+</div>
+ <nav class="navbar navbar-inverse isl-nav">
+    <div class="container">
+    	<div id="li_item">
+     	 	<ul class="nav navbar-nav navbar-left">
+       		 	<li ng-class="{'active' : currentPage == 'Home'}"><a href="#"><i class="fa fa-home"></i> HOME</a></li>
+       		 	<li ng-class="{'active' : currentPage == 'about_school'}" class="dropdown"><a class="dropdown-toggle" href="#about">ABOUT US 
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+            <li><a href="#about_school"> Institution </a></li>
+            <li><a href="#principal_desk"> Principal Desk </a></li>
+            <!-- <li><a href="#school_prayer"> School Prayer</a></li> -->
+            <li><a href="#rules"> Rules & Regulations</a></li>
+            </ul>
+            </li>
+       		 	<li ng-class="{'active' : currentPage == 'faculty'}"><a href="#faculty"> FACULTY </a></li>
+      			<li ng-class="{'active' : currentPage == 'curricular'}"><a href="#curricular"> CO-CURRICULAR </a></li>
+      			<li ng-class="{'active' : currentPage == 'careers'}"><a href="#careers"> CAREERS </a></li>
+      			<li ng-class="{'active' : currentPage == 'gallery'}"><a href="#gallery"> GALLERY</a></li>
+      			<li ng-class="{'active' : currentPage == 'Contact'}"><a href="#contact"><i class="fa fa-comment"></i> CONTACT US</a></li>
+     		 </ul>
+     	 </div>
+    </div>
+  </nav>
+  <div id="main">
+ 
+
+  
+    <!-- angular templating -->
+		<!-- this is where content will be injected -->
+  <div class="container"> 
+    <div class="row">
+        <div ng-view></div>
+    </div>
+  </div>
+
+  </div>
+
+  <div id="footer">
+
+    <div id="footer_content" class="row">
+
+      
+      <div class="col-sm-3">
+
+        <div id="footer_title">
+          
+          <p> About Us: </p>
+
+        </div>
+
+        <div id="footer_title_text">
+
+          <p>isl bhagabandh</p>
+          
+        </div>
+
+        <div id="footer_title_para">
+
+          <p>  Indian School Of Learning Bhagabandh is located in between National Highway from Putki to Phusbunglow. The school is managed by B.C.C.L. P.B. Area. School has 4.5 acres of total area which is provided by the B.C.C.L. authority. Ninety Percent of the total pupils are the ward(s) of B.C.C.L. workers.....</p>
+          
+        </div>
+
+        <div id="read_more1">
+
+          <a href="#about_school"> <p> Read More &raquo;</p> </a>
+        </div>
+        
+      </div>  
+
+      <div class="col-sm-4">
+        
+        <div id="quick_link_title">
+
+          <p> Quick Link </p>
+          
+        </div>
+
+        <div id="quick_link_content">
+
+          <div class="quick_home">
+
+            <p>   &raquo; <a href="#"> Home </a></p>
+
+          </div>
+
+          <div class="quick_home">
+
+            <p>  &raquo; <a href="#rules"> Rules & Regulation </a></p>
+            
+          </div>
+
+          <div class="quick_home">
+
+            <p>  &raquo; <a href="#curricular"> Co-Curricular </a></p>
+            
+          </div>
+
+          <div class="quick_home">
+
+            <p> &raquo; <a href="#about_school"> Institution </a></p>
+            
+
+          </div>
+
+          <div class="quick_home">
+
+            <p> &raquo; <a href="#careers"> Career Information </a></p>
+            
+
+          </div>
+
+          <div class="quick_home">
+
+           <p> &raquo; <a href="principal_desk"> Principal Desk </a></p>
+           
+          </div>
+
+      </div>
+
+      </div>
+
+      <div class="col-sm-4">
+
+        <div id="contact_detail">
+
+          <div id="contact_detail_title">
+
+          <p> CONTACT INFORMATION:</p>
+            
+          </div>
+
+          <div id="contact_detail_content">
+            <p>INDIAN SCHOOL OF LEARNING BHAGABAND. </p>
+            <p> (Located in between National Highway from Putki to Phusbunglow, Dhanbad, Jharkhand)</p> 
+            <p> Phone No. : +91-7277757957 </p> 
+            <p> E-mail: islbhagaband@gmail.com </p>
+            
+          </div>
+          
+        </div>
+        
+      </div>
+    
+    </div>
+    
+  </div>
+  
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+
+
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+  <script src="./js/ui-bootstrap-2.5.0.min.js"></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.10.0/ui-bootstrap-tpls.min.js"></script>
+  <script type="text/javascript" src="./js/script.js"></script>
+
+</body>
+</html>

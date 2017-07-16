@@ -1,0 +1,40 @@
+<div id="container_page">
+      <div class="col-sm-3">
+        <div id="news_title">
+            <p> NEWS & UPDATES</p>
+        </div>
+        <div id="news_content">
+          <marquee direction="up" id="marquee">
+          <ul>
+            <li>
+              <span>Addmission opens for the Ace .</span>
+            </li>
+            <li>
+              <span>There will be a parents & teacher meeting on next saturday.</span>
+            </li>
+            <li>
+              <span> School will remain closed on 5th of August.</span>
+            </li>
+            <li>
+              <span> There will be an eassy writting competition for 5th to 8th class on coming Friday.</span>
+            </li>
+          </ul>
+          </marquee>
+        </div>
+      </div>
+      <div class="col-sm-9">
+          <div id="slides_control">
+            <carousel interval="myInterval">
+
+                <slide ng-repeat="slide in slides" active="slide.active">
+
+                    <img ng-src="{{slide.image}}">
+
+                </slide>
+
+            </carousel>    
+
+          </div>
+
+      </div>
+</div>
